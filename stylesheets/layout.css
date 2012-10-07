@@ -41,6 +41,8 @@
 
 /* #Font-Face
 ================================================== */
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);
+
 /* 	This is the proper syntax for an @font-face file
 		Just create a "fonts" folder at the root,
 		copy your FontName into code below and remove
