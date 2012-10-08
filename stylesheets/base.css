@@ -93,6 +93,19 @@
     .main {
         padding-top: 40px;
     }
+    
+    ul.bullets {
+        list-style: disc;
+        list-style-position: inside;
+        width: 80%;
+        font-size: 90%;
+        margin-left: 20px;
+    }
+    
+    ul.bullets li {
+        padding-left: 14px;
+        text-indent: -14px;
+    }
 
 /* #Typography
 ================================================== */
