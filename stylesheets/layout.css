@@ -11,8 +11,8 @@
 ==================================================
 	#Site Styles
 	#Page Styles
-	#Media Queries
-	#Font-Face */
+	#Font-Face
+	#Media Queries */
 
 /* #Site Styles
 ================================================== */
@@ -20,41 +20,38 @@
 /* #Page Styles
 ================================================== */
 
+/* #Font-Face
+================================================== */
+
+/* Import the Google Font "Pontano Sans" */
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);
+
 /* #Media Queries
 ================================================== */
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: 959px) {
+    }
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+    	span.title { font-size: 24px; line-height: 26px; }
+    	span.subtitle { font-size: 14px; line-height: 16px; }
+    	.main { padding-top: 30px; font-size: 95%; }
+	}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
-
+	@media only screen and (max-width: 767px) {
+    	div.sidebar { text-align: left; position: inherit; }
+    	p.jekyll { display: none; }
+    	span.title { font-size: 28px; line-height: 30px; }
+    	span.subtitle { font-size: 18px; line-height: 20px; }
+    	ul.navigation li { display: inline-block; margin-right: 15px; }
+	   .main { padding-top: 0px; font-size: 90%; }
+	}
+	
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {}
-
-
-/* #Font-Face
-================================================== */
-@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);
-
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
-
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/

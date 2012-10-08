@@ -56,14 +56,49 @@
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
- }
+		}
+			
+    #heading {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .title {
+        font-size: 34px;
+        line-height: 40px;
+        display: block;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+        line-height: 24px;
+        display: block;
+    }
+    
+    .sidebar {
+        text-align: right;
+        position: fixed;
+    }
 
+    p.jekyll {
+        text-align: right;
+        font-size: 70%;
+        line-height: 120%;
+    }
+    
+    ul.navigation {
+        margin-top: 10px;
+    }
+    
+    .main {
+        padding-top: 40px;
+    }
 
 /* #Typography
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #181818;
-		font-family: "Georgia", "Times New Roman", serif;
+		font-family: 'Pontano Sans', 'Myriad', 'Myriad Pro', sans-serif;
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
@@ -94,10 +129,15 @@
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
-	a:hover, a:focus { color: #000; }
+	a, a:visited { color: #333; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color: #000; text-decoration: underline; }
 	p a, p a:visited { line-height: inherit; }
-
+	
+	ul.navigation li a {
+    	font-size: 16px;
+    	line-height: 20px;
+    	font-weight: 500;
+	}
 
 /* #Lists
 ================================================== */
