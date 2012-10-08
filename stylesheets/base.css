@@ -57,11 +57,6 @@
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
 		}
-			
-    #heading {
-        margin-top: 25px;
-        margin-bottom: 20px;
-    }
     
     .title {
         font-size: 34px;
@@ -76,7 +71,11 @@
     }
     
     .sidebar {
+        margin-top: 25px;
         text-align: right;
+    }
+    
+    .navfixer {
         position: fixed;
     }
 
