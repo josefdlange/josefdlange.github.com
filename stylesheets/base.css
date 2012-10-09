@@ -79,6 +79,8 @@
     .navfixer {
         position: fixed;
         width: 160px;
+        top: 100%;
+        left: 0%;
     }
 
     p.jekyll {
