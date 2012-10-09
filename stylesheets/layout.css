@@ -44,7 +44,6 @@
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-        .ie div.sidebar { }
     	div.sidebar { text-align: left; padding-top: 30px; }
     	div.navfixer { position: relative; }
     	p.jekyll { display: none; }
