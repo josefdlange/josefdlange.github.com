@@ -3,4 +3,25 @@ layout: base
 title: Post Archive
 permalink: /archive/
 ---
-La La La
+<h4>Post Archive</h4>
+
+{% for post in site.posts %}
+<p>
+    <h5><a href="{{ post.url }}">{{ post.title }}</a></h5><h6>{{ post.date | date: "%A, %B %d, %Y" }}</h6>
+    <span>{{ post.description }}</span>
+</p>
+{% endfor %}
+
+<div id="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a href="/" title="Previous Page">&laquo; Previous</a>
+      {% else %}
+      <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+      {% endif %}
+    {% endif %}
+    
+    {% if paginator.next_page %} 
+    <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+    {% endif %} 
+</div>

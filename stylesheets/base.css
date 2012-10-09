@@ -90,7 +90,7 @@
     }
     
     .main {
-        padding-top: 40px;
+        padding-top: 35px;
     }
     
     ul.bullets {
@@ -104,6 +104,11 @@
     ul.bullets li {
         padding-left: 14px;
         text-indent: -14px;
+    }
+    
+    img.picture-frame {
+        max-width: 80%;
+        height: auto;
     }
 
 /* #Typography

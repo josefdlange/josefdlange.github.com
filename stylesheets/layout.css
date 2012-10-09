@@ -31,18 +31,19 @@
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
+	   ul.bullets { font-size: 100%; }
     }
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
     	span.title { font-size: 24px; line-height: 26px; }
     	span.subtitle { font-size: 14px; line-height: 16px; }
-    	.main { padding-top: 30px; font-size: 95%; }
+    	.main { padding-top: 25px; font-size: 95%; }
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-    	div.sidebar { text-align: left;}
+    	div.sidebar { text-align: left; padding-top: 30px; }
     	div.navfixer { position: inherit; }
     	p.jekyll { display: none; }
     	span.title { font-size: 28px; line-height: 30px; }
