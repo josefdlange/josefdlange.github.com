@@ -44,7 +44,7 @@
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
     	div.sidebar { text-align: left; padding-top: 30px; }
-    	div.navfixer { position: inherit; }
+    	div.navfixer { position: inherit; width: inherit; }
     	p.jekyll { display: none; }
     	span.title { font-size: 28px; line-height: 30px; }
     	span.subtitle { font-size: 18px; line-height: 20px; }
