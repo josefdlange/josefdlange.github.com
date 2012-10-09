@@ -29,6 +29,10 @@
 /* #Media Queries
 ================================================== */
 
+    @media only screen and (min-height: 600px) {
+        body { margin-top: 30px; }
+    }
+
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 	   ul.bullets { font-size: 100%; }
@@ -57,4 +61,6 @@
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+    	.main { padding-left: 5%; padding-right: 5%; width: 90%; }
+	}

@@ -113,6 +113,17 @@
     img.picture-frame {
         max-width: 80%;
         height: auto;
+        display:table-cell;
+        vertical-align:middle;
+        margin:auto;
+        padding: 1px;
+        border: 1px solid #dddddd;
+    }
+    
+    div.picture-caption {
+        font-size: 80%;
+        text-align: center;
+        margin-bottom: 15px;
     }
 
 /* #Typography
