@@ -73,14 +73,14 @@
     .sidebar {
         margin-top: 25px;
         text-align: right;
-        width: 100%;
     }
     
     .navfixer {
         position: fixed;
-        width: 160px;
-        top: 100%;
-        left: 0%;
+    }
+    
+    .navfixer ul {
+        /*float: left;*/
     }
 
     p.jekyll {
@@ -94,7 +94,7 @@
     }
     
     .main {
-        padding-top: 35px;
+        margin-top: 34px;
     }
     
     ul.bullets {
