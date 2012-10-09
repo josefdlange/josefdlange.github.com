@@ -39,18 +39,18 @@
         .ie div.sidebar { position: relative; left: -150px; }
     	span.title { font-size: 24px; line-height: 26px; }
     	span.subtitle { font-size: 14px; line-height: 16px; }
-    	.main { margin-top: 24px; font-size: 95%; }
+    	.main { margin-top: 27px; font-size: 95%; }
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-        .ie div.sidebar { position: none; left: none; }
+        .ie div.sidebar { position: relative; left: none; }
     	div.sidebar { text-align: left; padding-top: 30px; }
-    	div.navfixer { position: none; }
+    	div.navfixer { position: relative; }
     	p.jekyll { display: none; }
     	span.title { font-size: 28px; line-height: 30px; }
     	span.subtitle { font-size: 18px; line-height: 20px; }
-    	ul.navigation li { display: inline-block; margin-right: 15px; }
+    	ul.navigation li { float: left; margin-right: 15px; }
     	.main { padding-top: 0px; font-size: 90%; }
 	}
 	
