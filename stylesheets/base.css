@@ -125,6 +125,10 @@
         text-align: center;
         margin-bottom: 15px;
     }
+    
+    hr.divider {
+        display: none;
+    }
 
 /* #Typography
 ================================================== */
@@ -170,6 +174,12 @@
     	line-height: 20px;
     	font-weight: 500;
 	}
+
+	a.with-color { color: #0f2369;  }
+	a.with-color:hover { color: #164982; }
+
+	span.title a { text-decoration: none; }
+	span.title a:hover { text-decoration: none; }
 
 /* #Lists
 ================================================== */

@@ -3,4 +3,3 @@ source: ./
 destination: ./_site
 lsi: false
 pygments: true
-paginate: 10
