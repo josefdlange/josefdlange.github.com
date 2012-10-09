@@ -116,8 +116,9 @@
     }
 
     .ie div.sidebar {
-        margin-left: -100px;
-    }
+        position: relative;
+        left: -160px;    
+        }
 
 /* #Typography
 ================================================== */
