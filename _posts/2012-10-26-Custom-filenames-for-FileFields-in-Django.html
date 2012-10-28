@@ -1,0 +1,56 @@
+---
+title: "Custom filenames for FileFields in Django"
+description: "Protecting user privacy and preventin file collisions since 2012."
+layout: post
+categories: [programming]
+tags: [programming, python, lendingshack, learning, django, filefield, upload_to, filename]
+---
+<p>
+    When we launched LendingShack, <a href="krwenholz.com">Kyle</a> and I were excited (read: anxious) to see what kinds of bugs would crop up with our code once people started using it. One of the first silly ones we noticed was a case similar to this:
+</p>
+<ol>
+    <li>User 1 uploads an item to the site along with a pretty picture, titled "photo.jpg"</li>
+    <li>User 2 uploads a different item to the site along with a pretty picture of its own, also titled "photo.jpg"</li>
+    <li>Oddly enough (or perhaps we should have expected this), the second user's picture of their item started showing up as the photo for User 1's item as well.</li>
+</ol>
+<p>
+    I suppose we were foolish to assume that just uploading the files to our S3 bucket willy-nilly would handle duplicates. We should have anticipated that without any other complex method to replace files, of course the bucket would overwrite what was already there. So I started doing some research.
+</p>
+<p>
+    Turns out, Django is smarter than the average bear and can be made to handle this. Which is pretty cool. In the first bit of their <a href="https://docs.djangoproject.com/en/dev/ref/models/fields/#filefield">documentation of FileFields</a>, they write that the keyword <code>upload_to</code> is "a local filesystem path that will be appended to your <code>MEDIA_ROOT</code> setting to determine the value of the url attribute." If, months ago, we had read the next bit of Djangos documentation, we would have read: "This may also be a callable, such as a function, which will be called to obtain the upload path, including the filename."
+</p>
+<p>
+    So, I devised a way to make us a pretty(ish) filename while still maintaining uniqueness in our bucket for each image uploaded.
+</p>
+<pre><code>def update_filename(instance, filename):
+    
+    // This is the root path we want at the beginning.
+    path = "media/userImages"
+    
+    // Get filename and extension from the passed-in filename
+    // Pretty original variable names, eh?
+    theFilename, fileExtension = os.path.splitext(filename)
+    
+    // Concat up todays date/time with the filename, 
+    // just for shits and giggles and to have something
+    // already pretty unique.
+    concattedName   = datetime.now().__str__() + theFilename
+    
+    // Make an MD5 of the weird amalgamation of original 
+    // filename and date, slide the user's username in front
+    // of it, and slip the extension right behind.
+    newFileName     = instance.user.username + "_" 
+                    + md5.new(concattedName).hexdigest() 
+                    + fileExtension
+    
+    // Return the fully combined path and name.
+    return path + "/" + newFileName</code></pre>
+<p>
+    Then, in my <code>ImageField</code> (actually an <code>ImageWithThumbsField</code> courtesy of <a href="https://github.com/duointeractive/django-athumb">django-athumb</a>), I set <code>upload_to=update_filename</code>. Oddly enough, this didn't work at first. Python/Django didn't know what the hell I was talking about when I mentioned <code>update_filename</code>. Turns out, I had to put the callable inside of the model class and even then <i>before</i> any of the fields, in order for Pythong/Django to be aware of it before trying to find it... Let me know if I've made a mistake here and I can actually put it elsewhere. I suppose I could make a <code>support.py</code> with functions of this ilk and then import them when necessary.
+</p>
+<p>
+    ... but I don't really want to do that.
+</p>
+<p>
+    So, yeah, it's a bit drawn out for something so simple, but I wanted a unique way to create a unique filename. I considered for a long time leaving the username entirely out of it, but I think it's okay this way. Usernames aren't private to the world or to non-logged in users, plus this makes it easy to shuffle through our S3 bucket should we have issues and just delete all images, old and new, related to a user or their items. This might be helpful if we ban a user and want to free up the space, or when a user deletes an item on the site and had previously changed the image a few times.
+</p>
