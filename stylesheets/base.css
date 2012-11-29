@@ -161,6 +161,52 @@
     ul.large {
         font-size: 115%;
     }
+    
+    .connections a {
+        color: #888888;
+    }
+    
+    .connections a:visited {
+        color: #888888;
+    }
+    
+    .connections a:hover {
+        text-decoration: none;
+        color: #666666;
+    }
+
+
+    .connections {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .contactinfo a {
+        display: block;
+        color: #888888;
+        text-decoration: none;
+        line-height: 200%;
+    }
+    
+    .contactinfo a:visited {
+        display: block;
+        color: #888888;
+        text-decoration: none;
+        line-height: 200%;
+    }
+    
+     .contactinfo a:hover {
+        text-decoration: none;
+        color: #555555;
+    }
+    
+   
+
+    .contactinfo a i {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+    }
 
 /* #Typography
 ================================================== */

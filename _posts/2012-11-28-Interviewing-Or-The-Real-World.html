@@ -1,0 +1,62 @@
+---
+title: "Interviewing, Or, how to truly and completely exhaust a senior computer science student"
+description: "The story of slowly working my way toward the real world."
+layout: post
+categories: [programming, school, software, interview, career, job]
+---
+<p>
+    I'm in my last year of undergrad, in case that wasn't entirely clear already. Being constantly anxious about being conspicuously responsible, I started looking for post-graduation work in earnest all the way back in September. This was before any sort of career fair on campus or campus recruiting began, so naturally I had no idea what I was doing. I updated and re-formatted my resumé into something pretty (and in fact, modeled it after the design of this website).
+</p>
+<p>
+    I applied to Google, Microsoft, Apple, Amazon, and several more regionally-focused companies (and smaller companies). I honestly heard back from just two. I won't disclose the names of the companies in the off-chance that I wasn't supposed to. NDAs and whatnot. What follows is some advice I've derived from what I've picked up through the process.
+</p>
+<p>
+    The interview process in the software field is tough. Really tough. There are many steps. The first of course is your resumé. Like I said before, I made mine really pretty and submitted it to all those companies. An easy thing to do is to misrepresent yourself on a resumé, in both directions, particularly with programming. "I have seen this language before" does not equate to "I know this language like the back of my hand". Don't be shy about the weirder things, either. If your other undergraduate major is Theatre Arts and you're applying for Software Engineer, list some of your more notable experience in theatre–your versatility just might prove useful. (In my case, I hope it did)
+</p>
+<p>
+    So, my resumés were in and I had some offers to interview from some companies. One wanted to do a phone screen, while the other had recruiters coming to campus and wanted to speak to candidates in-person. Both experiences were a bit nerve-wracking. One was highly technical, the other highly personal. Well, not highly personal -- they didn't ask me <i>personal</i> questions, but certainly they asked me questions about successes and failures of mine. Being able to talk on your feet and easily assess yourself is a key quality in that kind of interview. In the technical phone screen, talking and explaining what you're thinking is key, and don't bite off more than you can chew. If they ask you "On a scale of 1 to 10, how confident are you in your expertise of...", don't say anything seven or above unless you've written the goddamn book, because that's how much you'll generally have to know.
+</p>
+<p>
+    That all being said, I made it to the second round of each company's interviews. I'll come out and say that one company certainly is not as technical as the other. One is more consulting work while the other was definitely a Software Engineering position. For the former, the ability to display interpersonal skills is crucial. The second interview was essentially framed around gaining an understanding of my skills in that ball field, and my experience in theatre helped me.
+</p>
+<p>
+    In some schools of acting, the name of the game is understanding your character to the core of their psyche. When dealing with people whom I've not interacting with for very long, I find it best to start cracking away at their psyche (through observation, of course). As I begin to understand what makes them operate and how they respond to certain cues, I tailor my behavior to best suit them. I'm not deceiving them–I'm still completely honest in how I represent myself–but I definitely am delivering my representation of myself in a pill that's easier for this specific person to swallow. I believe it has done much good for me in my interactions with peers and superiors alike.
+</p>
+<p>
+    In other words, I kicked that interview's ass, and have been offered a position from this company, which is super awesome.
+</p>
+<p>
+    The other company's process was <strong>crazy</strong>. I'm still waiting on their decision, which is nerve-wracking, so I'm writing this entire post as a way to deal with my anxiety.
+</p>
+<p>
+    The phone screen was right off the bat intimidating. The people on the phone were rather nice, but once asked a few basic questions about who I was, my experience, etcetera. Then came the first real programming question. I decided, "Hell, I've been doing a lot of programming in Python, why not do this all in Python?" That was a mistake. While Python is cool and quick and great, I certainly don't have that learned-to-program-on-that-language thing that Java has in my heart. As much as I rag on Java, the truth is, it's more second-nature than any other language and as such I can more readily communicate concepts in it. 
+</p>
+<p>
+    Anyway, I was given a pretty simple question to work out. I was given a large set of data that I needed to break into multiple "records" so to speak, and extract all the unique values for a certain attribute of said "record". My first inclination was to get it done. So, I did.
+</p>
+<p>
+    I iterated over the data, and extracted the value, putting it into my collection of extracted data (provided a search for that value on my collection of extracted data determined it was not already recorded). This, of course, was not optimal given the data structures I used. Why would I think to use a <code>set</code> right away instead of my good old friend, the <code>list</code>? The guys on the phone were ready and willing to point out my mistake, though they did it rather slyly by asking me not if it could be more efficient, but what the worst-case timing on the algorithm was (<code>O(n^2)</code>).
+</p>
+<p>I realized that instead of the list I could be using a set (because I can check my set in constant time for the existence of a certain value) and quickly corrected my algorithm to be <code>O(n)</code> timing. That was essentially it for that interview–we ran out of time and it was late on a Friday. They definitely wanted to go home and so did I.
+</p>
+<p>
+    I didn't hear from this company in a while, which apparently has to do with them not knowing I was in college and not graduating until May. My application was transferred over to the Campus Recruiting section and everything was sorted. I was originally invited to do a second phone screen, but they ended up upgrading me to an on-site interview, which was quite exciting.
+</p>
+<p>
+    I arrived on the campus of the company early one Tuesday morning, bright-eyed, bushy-tailed, and about to pee myself. This interview (thank goodness) didn't require formalwear. I put on a pair of comfy grey khakis, a casual collared shirt, and a fleece pullover, and I fit right in. At the first company I talked about, it was full business attire, and boy was it tedious.
+</p>
+<p>
+    Back to the story. Once on the company's campus, I was brought into a conference room in a pretty new-looking building with the A/C turned up way too high. My nerves kept me warm through the day, though. Throughout the day, I went through four technical interviews and one historical/behavioral interview.
+</p>
+<p>
+    I won't recap every question I was asked, but I'll give the general idea: these kinds of companies are very concerened with two primary things: your understanding of data structures and your understanding of algorithms. Do you know a tree from a binary tree? Do you know the timing of InsertionSort vs. QuickSort? These are all super important, and if you have the mental capacity for sheer memorization, do it. But that's only half of it. The really important part is to understand <i>why</i> the timings are different, and why the types of trees are different. I'm shit for memorization, so what I depended on was my ability to derive these "memorizable" factoids from my deep understanding of the concepts. Understanding the concepts allows you to talk through problems and bounce ideas off your interviewer, which I think is much more helpful for your "case" than you'd think.
+</p>
+<p>
+    Know your data structures, your algorithms, and if you really want to impress, know your design patterns. Even being able to say the words at a moderately correct time is awesome. In real software design, our favorite friends the design patterns show up everywhere you look. They're notorious for a reason: they work. Learn them.
+</p>
+<p>
+    A final word of advice: <strong>be confident</strong>. You're going to do great, and so long as you know that, nothing can stop you. Don't be afraid to be wrong or ask your interviewer for some help. Programmers don't know everything, nor are they expected to. If we were, we wouldn't write documentation. Speaking of documentation -- start documenting everything you write, starting yesterday. It's a good habit to have and a good one to maintain. Also, start writing test for everything you program. Again, start this yesterday. Knowing what testing is, when to test, why to test, and how to test is so very important and impressive to an interviewer.
+</p>
+<p>
+    Good luck out there. I believe in you.
+</p>  

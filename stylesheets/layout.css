@@ -58,6 +58,7 @@
     	ul.navigation li { float: left; margin-right: 15px; }
     	.main { padding-top: 0px; font-size: 90%; }
     	hr.divider { display: block; }
+	   .connections { display: none; }
 	}
 	
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
