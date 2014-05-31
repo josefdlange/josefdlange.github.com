@@ -210,6 +210,12 @@
 
     .project-header {
         border-bottom: 1px dotted black;
+        text-decoration: none;
+    }
+
+    .project-header:hover {
+        border-bottom: 1px solid black;
+        text-decoration: none;
     }
 
 /* #Typography
