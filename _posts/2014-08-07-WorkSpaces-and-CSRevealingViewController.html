@@ -1,0 +1,55 @@
+---
+title: "AWS WorkSpaces, and introducing: CSRevealingViewController"
+description: "A new job, and a new omni-directional swipe-to-reveal ViewControllerController(Controller?)"
+layout: post
+categories: [programming, objective-c, swift, cocoa, ios, career]
+---
+<p>
+<img src="/images/good_news.png" style="width: 80%; margin-left: auto; margin-right: auto;" />
+<br />
+<em>Good news everyone!</em>
+</p>
+
+<p>
+I've recently moved teams inside of Amazon. I've gone from Operations -- the land of broken dreams and late night service rescue -- to Development! Hooray! In particular, I am the primary developer of the <a href="https://aws.amazon.com/workspaces/">Amazon WorkSpaces</a> <a href="https://itunes.apple.com/us/app/amazon-workspaces/id727778113">iPad App</a>. WorkSpaces is a cool product which could empower organizations to deliver cost-efficient yet performant computing environments to its members. With the iPad App (and other clients), you can log into your WorkSpace, a hosted virtual desktop in the cloud, and work like you were sitting right in front of a full-scale desktop computer. I'm very excited for the opportunity to learn and grow while delivering massive improvements to usability and stability of the app.
+</p>
+
+<p>
+The best part about all of this is now I'm a <strong>full-time iOS developer</strong> which is <strong>awesome</strong>. It's what I've wanted to do since I was starting out in computer work, and here I am. It's amazing to have reached a dream of mine, and I couldn't be happier.
+</p>
+
+<p>
+Because I now work in iOS all day, I have a lot of great ideas. The latest great idea is a solution to a problem I don't have yet (Huh?). I've been toying with UI bits and pieces. I realized while looking around that there are <strong>a lot</strong> of swipe-to-reveal ViewController implementations out there. The catch? <em>They all seem to only support left or right directional swiping</em>. What if I want to swipe up to reveal? Or down? Well, never fear, I decided to solve the problem myself!
+</p>
+
+<p>
+For my first go at it, I thought, "Hell, let's try <a href="https://developer.apple.com/swift/">Swift</a>!" (This <a href="https://gist.github.com/josefdlange/55d4003335c1ad7c7d2f">Gist</a> has the code). It was ugly, but it worked. What I really wanted to do was to make all of the positioning based in AutoLayout, which I accomplished. The Swift implementation was fun to write, and it's worth noting that I was able to write this code very fast despite not having interacted with Swift very much. It's quick to pick up and rapid for prototyping, which is pretty cool.
+</p>
+
+<p>
+Since Swift is still kind of buggy (the live compiler that does some nice error checking for you kept crashing on my code, for starters, forcing me to quit Xcode, edit my code in a different editor to make it correct, then open Xcode again so it wouldn't pee on itself), I decided I should port the idea to Objective-C to see if any of the stability issues were actually my fault. There were a couple, but by and large it worked pretty well. I even managed to handle orientation changes and whatnot, across iOS 7 and iOS 8. 
+</p>
+
+<p><em>Spoiler alert (and tangent): iOS 8 deprecates <code>-(void)willRotateToInterfaceOrientation...</code> and its counterparts, so be ready to handle their replacement. I think the way iOS 8 does it is pretty smart, to be fair. Instead of thinking of the orientation of the device, the new thinking around it is to just be flexible to different frame shapes and sizes, and tool your interface to layout dynamically across the multiple sizes that different orientations create.</em></p>
+
+<p>
+Back to the story: I ported to Objective-C. What I realized is that I had a really poorly-designed hunk of code. (Source: <a href="https://gist.github.com/josefdlange/1df07c011213a8da7001">Gist</a>). It depended on a lot of switch statements and other ugly things, things that would be more easily derived with some better style, too. So, I rewrote the whole damn thing.
+</p>
+
+<p>
+In deciding to rewrite it (and since I had the main machinery still in my head) I made it a very strong focus of mine to write this code in such a way that someone who is not me could use it. I think it turned out well. The real meat of it is wiring up some AutoLayout constraints in every direction from two embedded ViewControllers's centerpoints to the RevealingViewController's centerpoint (to be more precise, I mean ther <em>views</em>). Based on a directional value the developer sets, one of these constraints is mutable based on user input via a pan gesture. In addition, the CSRevealingViewController supports a developer-configurable "overhang" of the revealing "top" VC, touch-to-close, and programmatic manipulation.
+</p>
+
+<p>
+I think it turned out pretty well, and I'm extremely proud to release it open-source.
+</p>
+
+<p>
+GitHub: <a href="https://github.com/josefdlange/CSRevealingViewController">CSRevealingViewController</a>
+<br />
+CocoaPod/Doc: <a href="http://cocoadocs.org/docsets/CSRevealingViewController/0.1.0/">CSRevealingViewController</a>
+</p>
+
+<p>
+Please feel free to submit issues or pull requests with and problems or changes you have in mind. I love collaboration!
+</p>
