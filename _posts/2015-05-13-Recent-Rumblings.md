@@ -14,4 +14,4 @@ That's about it for now. There's a lot under wraps but some exciting things upco
 
 
 [loup]: https://loupapp.com "Loup: Redefining Local Transportation"
-[validict]: http://josefdlange.com/projects/validict.html "validict: stupid-simple dictionary validation for Python"
+[validict]: http://github.com/josefdlange/validict "validict: stupid-simple dictionary validation for Python"
