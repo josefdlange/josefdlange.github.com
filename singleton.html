@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>How Do I Declare A Block in Objective-C?</title>
+  <style>
+    body {
+      background-color: #343434;
+      color: #AEC5C7;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      padding: 40px;
+      padding-bottom: 0;
+    }
+
+    strong {
+      color: #268bd2;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 1.5em;
+      text-align: center;
+      font-weight: 200;
+    }
+
+    h2 {
+      font-weight: 100;
+    }
+
+    .return {
+      color: #2aa198;
+    }
+
+    .name {
+      color: #BC8800;
+    }
+
+    .parameter-types, .parameters {
+      color: #7C9F00;
+    }
+
+    .disclaimer {
+      padding-top:40px;
+      padding-bottom: 40px;
+      font-weight: 100;
+      font-style: oblique;
+    }
+
+    .disclaimer strong {
+      font-weight: 300;
+      color: #bbbbbb;
+    }
+
+    code {
+      display: block;
+      font-family: Monaco, Menlo;
+      font-size: 20px;
+      margin-bottom: 3em;
+      margin-left: 40px;
+      margin-top: 1.5em;
+    }
+
+    footer {
+      font-size: 12px;
+      margin-top: 200px;
+      opacity: 0.4;
+      text-align: right;
+    }
+
+    a {
+      color: #0088D9;
+      text-decoration: none;
+    }
+
+  </style>
+
+  <style media="print">
+    body {
+      background-color: #FFFFFF;
+      font-size: 16px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 1em;
+    }
+
+    code {
+      font-size: 16px;
+      margin-bottom: 2em;
+      margin-left: 20px;
+    }
+
+    footer {
+      font-size: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>How Do I Implement a Singleton in Objective-C?</h1>
+
+  <div>
+    <h2>HERE, YOU LAZY FOOL:</h2>
+<div style="background: #343434; overflow:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .2em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #aaaaaa">+</span> (<span style="color: #EA9200; font-weight: bold">id</span>)sharedManager {
+      <span style="color: #008800; font-weight: bold">static</span> MyManager <span style="color: #aaaaaa">*</span>sharedMyManager <span style="color: #aaaaaa">=</span> <span style="color: #007020">nil</span>;
+      <span style="color: #008800; font-weight: bold">static</span> <span style="color: #EA9200; font-weight: bold">dispatch_once_t</span> onceToken;
+      dispatch_once(<span style="color: #aaaaaa">&amp;</span>onceToken, <span style="color: #aaaaaa">^</span>{
+          sharedMyManager <span style="color: #aaaaaa">=</span> [[self alloc] init];
+      });
+      <span style="color: #008800; font-weight: bold">return</span> sharedMyManager;
+    }
+</pre></div>
+
+<div class="disclaimer">
+Yes, I know there are several more ways to do it, but this is the most common use case and frankly this is all you should need.
+
+<strong>Moreover</strong>, you should avoid singletons as much as possible -- they are not a solution to everything. They are, however, a solution to <strong>some things</strong>.
+</div>
+
+  </div>
+
+  <footer>Maintained by <a href="http://josefdlange.com">Josef Lange</a>. Page code shamelessly (and poorly) borrowed from <a href="http://lazerwalker.com">Mike Lazer-Walker</a>.</footer>
+
+</body>
+</html>
+
