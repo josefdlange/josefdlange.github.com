@@ -144,16 +144,15 @@ Cool. Now we have successfully spun up a server and manually set up its nginx pr
 	/etc/init.d/docker start
 	docker run -d -e SETTINGS_FLAVOR=s3 -e AWS_BUCKET=[YOUR BUCKET HERE] -e STORAGE_PATH=/registry -e STORAGE_REDIRECT=true -p '5000:5000' registry
 	echo 'Done Setting up Docker'
-	sudo aws s3 cp s3://[YOUR_BUCKET_HERE]/config/nginx.conf /etc/nginx/nginx.conf
+	aws s3 cp s3://[YOUR_BUCKET_HERE]/config/nginx.conf /etc/nginx/nginx.conf
 	mkdir -p /etc/nginx/sites-available
-	sudo aws s3 cp s3://[YOUR_BUCKET_HERE]/config/docker-registry /etc/nginx/sites-available/docker-registry
+	aws s3 cp s3://[YOUR_BUCKET_HERE]/config/docker-registry /etc/nginx/sites-available/docker-registry
 	# At your discretion: either store your htpasswd file in S3 with everything else, or set passwords on boot:
-	# sudo aws s3 cp s3://[YOUR_BUCKET_HERE]/config/docker-registry.htpasswd /etc/nginx/docker-registry.htpasswd
+	# aws s3 cp s3://[YOUR_BUCKET_HERE]/config/docker-registry.htpasswd /etc/nginx/docker-registry.htpasswd
 	# --- OR ---
 	# htpasswd -c -b /etc/nginx/docker-registry.htpasswd [USERNAME1] [PASSWORD1]   # -c flag for creating file.
 	# htpasswd -b /etc/nginx/docker-registry.htpasswd [USERNAME2] [PASSWORD2]
-	sudo service nginx restart
-
+    /etc/init.d/nginx start
 	
 
 Any problems? Feel free to ask a question in the comments -- I wrote this _as_ I was figuring it out, so it's likely I've missed something here and there.
