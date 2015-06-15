@@ -156,3 +156,8 @@ Cool. Now we have successfully spun up a server and manually set up its nginx pr
 	
 
 Any problems? Feel free to ask a question in the comments -- I wrote this _as_ I was figuring it out, so it's likely I've missed something here and there.
+
+Inspired and compiled with these posts in mind:
+
+[Build Your Own Private Docker Registry for $3/month](http://blog.50projects.com/2014/08/build-your-own-private-docker-registry.html)
+[How To Set Up a Private Docker Registry on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-private-docker-registry-on-ubuntu-14-04)
