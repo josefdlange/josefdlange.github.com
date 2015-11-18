@@ -10,6 +10,7 @@ I've been having an issue the last couple days that I couldn't figure out. I had
 At any rate, here's the config I had before, more or less:
 
 `~/.tmux.conf`:
+
 ```
 set-option -g default-command "reattach-to-user-namespace -l zsh"
 
@@ -29,6 +30,7 @@ source ~/.tmuxline.sh
 After the update to tmux 2.1, I found that I needed only this:
 
 `~/.tmux.conf`:
+
 ```
 set-option -g default-command "reattach-to-user-namespace -l zsh"
 
