@@ -9,39 +9,10 @@ I've been having an issue the last couple days that I couldn't figure out. I had
 
 At any rate, here's the config I had before, more or less:
 
-`~/.tmux.conf`:
-
-```
-set-option -g default-command "reattach-to-user-namespace -l zsh"
-
-set -g mode-mouse on
-set -g mouse-resize-pane on
-set -g mouse-select-pane on
-set -g mouse-select-window on
-
-set -g default-terminal "screen-256color"
-
-set-option -g allow-rename off
-set-option -g renumber-windows on
-
-source ~/.tmuxline.sh
-```
+{% gist f0042e428d6cc4571a20 %}
 
 After the update to tmux 2.1, I found that I needed only this:
 
-`~/.tmux.conf`:
-
-```
-set-option -g default-command "reattach-to-user-namespace -l zsh"
-
-set -g mouse on
-
-set -g default-terminal "screen-256color"
-
-set-option -g allow-rename off
-set-option -g renumber-windows on
-
-source ~/.tmuxline.sh
-```
+{% gist 85dfbf7383e276568fb5 %}
 
 It's actually a lot more convenient, but it was frustrating that I had to search so far to find the solution. I'm by no means a tmux expert so if there's anything about this or other parts of my config that seem wrong or distasteful, I'd love to hear about it.
