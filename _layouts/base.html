@@ -9,8 +9,14 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Josef D. Lange | {{ page.title }}</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="{{ page.description }}" />
+	<meta name="author" content="Josef Lange" />
+	
+	<meta name="og:title" content="{{ page.title }}" />
+	<meta name="og:type" content="website" />
+	{% if page.og_image %}
+	<meta name="og:image" content="{{ page.og_image }}" />
+	{% endif %}
 
 	<!-- Mobile Specific Metas
   ================================================== -->
