@@ -5,7 +5,7 @@ layout: post
 categories: [pizza, greek, recipes, 52weeksofcooking]
 og_image: "http://josefdlange.com/images/pizza/greek/010_finished.jpg"
 ---
-Pizza! Greece! What a combination. I'm participating in a Reddit community called [52weeksofcooking](https://reddit.com/r/52weeksofcooking) -- every week there's a different theme in which you must prepare a dish. It can be the cuisine of a given culture, an ingrediant, a method of preparation, or just about anythings food-related. In addition to the weekly challenges, this year there's the option to take on a "meta-theme" -- a year-long theme that you must fulfill in addition to the weekly challenege theme, all in the same dish.
+Pizza! Greece! What a combination. I'm participating in a Reddit community called [52weeksofcooking](https://reddit.com/r/52weeksofcooking) -- every week there's a different theme in which you must prepare a dish. It can be the cuisine of a given culture, an ingredient, a method of preparation, or just about anythings food-related. In addition to the weekly challenges, this year there's the option to take on a "meta-theme" -- a year-long theme that you must fulfill in addition to the weekly challenege theme, all in the same dish.
 
 I was really excited to do this. I love cooking and lately I've been strapped for inspiration. Once more, the internet pulls through in forcing me to try new ideas!
 
