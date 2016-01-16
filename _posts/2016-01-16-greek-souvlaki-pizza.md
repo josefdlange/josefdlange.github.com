@@ -26,7 +26,8 @@ I really enjoyed making this pizza, so I thought I'd record a recipe of sorts (n
 	<li>Cumin</li>
 	<li>Paprika</li>
 	<li>Oregano</li>
-	<li>Eggplant</li>
+	<li>Fresh Thyme</li>
+    <li>Eggplant</li>
 	<li>Cherry tomatoes</li>
 	<li>Red onions</li>
 	<li>Kalamata olives</li>
@@ -36,7 +37,7 @@ I really enjoyed making this pizza, so I thought I'd record a recipe of sorts (n
 </ul>
 
 <h5>I. Marinade</h5>
-In a small bowl, mix together a few tablespoons of olive oil and all the juice from the lemon. Add in a healthy but not excessive dose of cumin, paprika, and oregano. Add some salt and pepper. Throw in your lamb cubes and cover, and let sit a few hours.
+In a small bowl, mix together a few tablespoons of olive oil and all the juice from the lemon. Add in a healthy but not excessive dose of cumin, paprika, oregano, and thyme. Add some salt and pepper. Throw in your lamb cubes and cover, and let sit a few hours.
 <figure>
 	<img src="/images/pizza/greek/001_marinaded_lamb.jpg" style="width: 100%" />
 	<figcaption><small>The lemon juice in here really penetrates the tissue of the lamb both to tenderize and to deliver flavor from the spices.</small></figcaption>
