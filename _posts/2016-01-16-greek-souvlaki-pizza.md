@@ -3,7 +3,7 @@ title: "Greek Souvlaki Pizza"
 description: "r/52weeksofcooking weekly challenge #3"
 layout: post
 categories: [pizza, greek, recipes, 52weeksofcooking]
-og_image: "/images/pizza/greek/010_finished.jpg"
+og_image: "http://josefdlange.com/images/pizza/greek/010_finished.jpg"
 ---
 Pizza! Greece! What a combination. I'm participating in a Reddit community called [52weeksofcooking](https://reddit.com/r/52weeksofcooking) -- every week there's a different theme in which you must prepare a dish. It can be the cuisine of a given culture, an ingrediant, a method of preparation, or just about anythings food-related. In addition to the weekly challenges, this year there's the option to take on a "meta-theme" -- a year-long theme that you must fulfill in addition to the weekly challenege theme, all in the same dish.
 
