@@ -1,6 +1,26 @@
-safe: true
-source: ./
-destination: ./_site
-lsi: false
-highligher: 'pygments'
-permalink: /:year/:month/:day/:title/
+# Dependencies
+gems:             [jekyll-paginate, redcarpet, jekyll-gist, rouge]
+markdown:         redcarpet
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Josef Lange
+tagline:          'Huge Nerd'
+description:      ''
+url:              http://josefdlange.com
+baseurl:          /
+
+author:
+  name:           'Josef Lange'
+  url:            https://twitter.com/josefdlange
+
+paginate:         5
+
+# Custom vars
+version:          1.0
+
+github:
+  repo:           https://github.com/josefdlange/josefdlange.github.com
