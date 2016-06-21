@@ -2,7 +2,9 @@
 title: "Recent Rumblings"
 description: "What's been going on lately"
 layout: post
-categories: [meta, self]
+tags:
+ - meta
+ - self
 ---
 
 So, I've been with [Loup][loup] for a while now. A couple months. It's great – I've been given tons of responsibility and opportunity, and I think I'm thriving in it. Since starting, I've developed an app for internal use with some great usability features. I have contributed extensively to our web services, which I hadn't anticipated I would be doing. Turns out I'm loving that, too. So I guess I'm a full-stack engineer now, which is pretty exciting!

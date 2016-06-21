@@ -2,7 +2,12 @@
 title: "Setting Up a Private Docker Registry"
 description: "Adventures in EC2 User-Data, Nginx Configuration, and that sweet, sweet Dockerized life."
 layout: post
-categories: [docker, ec2, aws, privacy, nginx]
+tags:
+ - docker
+ - ec2
+ - aws
+ - privacy
+ - nginx
 ---
 Docker is a pretty cool technology. Abstracting much of the system configuration away from, well, system configuration, means that you can get to work writing and shipping code faster. Like most modern technologies, Docker is all-in on openness, which is great. Unless you're trying to run a business where your technology should remain private. 
 

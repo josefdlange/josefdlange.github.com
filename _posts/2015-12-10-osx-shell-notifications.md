@@ -2,7 +2,11 @@
 title: "OS X Notifications from the Shell"
 description: "Keeping myself from being too lazy."
 layout: post
-categories: [programming, tools, testing, notifications, shell]
+tags:
+ - programming
+ - tools
+ - notifications
+ - shell
 ---
 
 I have one big productivity suck when working: asynchronous tasks. 
