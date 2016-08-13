@@ -2,8 +2,7 @@
 title: "tmux 2.1 and mode-mouse"
 description: "Poorly-documented breaking changes"
 layout: post
- - programming
- - tools
+categories: [programming, tools]
 ---
 
 I've been having an issue the last couple days that I couldn't figure out. I had upgraded most tools on my machine as I tend to do every once in a while, and after a few days I noticed that my mouse integration in `tmux` wasn't working quite the way I expected. Turns out, they had made a significant change to the mousing mode without documenting it very well, or at least without anything past putting in the changelog. I guess I should have read it, but the software should probably tell the user that a feature they're trying to use has been replaced.
