@@ -9,8 +9,8 @@ permalink:        pretty
 title:            Josef Lange
 tagline:          'Huge Nerd'
 description:      ''
-url:              http://josefdlange.com
-baseurl:          ''
+url:              'http://josefdlange.com'
+baseurl:          'http://josefdlange.com'
 
 author:
   name:           'Josef Lange'
