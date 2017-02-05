@@ -23,7 +23,7 @@ The failure of these O-Rings allowed for highly-pressurized, super-hot combustio
 
 * * *
 
-Fourteen years ago, seven more of our nation's selfless explorers were lost. The Space Shuttle Columbia broke apart on atmospheric re-entry on February 2nd, 2003. Pieces of the shuttle, including personal equipment of the astronauts, were found strewn about Texas and Louisiana.
+Fourteen years ago, seven more of our nation's selfless explorers were lost. The Space Shuttle Columbia broke apart on atmospheric re-entry on February 1st, 2003. Pieces of the shuttle, including personal equipment of the astronauts, were found strewn about Texas and Louisiana.
 
 It was discovered after investigation that a piece of insulation foam from the external fuel tank struck the leading edge of the orbiter's wing, damaging it and leaving it susceptible to high-temperature gas entry during re-entry. These high-temperature gases entered the internal structure of the wing and effectively destroyed it.
 
