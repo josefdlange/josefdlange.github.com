@@ -9,8 +9,8 @@ redcarpet:
 permalink:        pretty
 
 # Setup
-title:            Josef Lange
-tagline:          'Huge Nerd'
+title:            Joey Lange
+tagline:          'Bit Shepherd'
 description:      ''
 url:              'http://josefdlange.com'
 baseurl:          ''
@@ -18,7 +18,7 @@ baseurl:          ''
 exclude: ["README.md", "Gemfile", "Gemfile.lock", ".gitignore", "LICENSE.md"]
 
 author:
-  name:           'Josef Lange'
+  name:           'Joey Lange'
   url:            https://twitter.com/josefdlange
 
 paginate:         5
