@@ -12,7 +12,7 @@ permalink:        pretty
 title:            Joey Lange
 tagline:          'Bit Shepherd'
 description:      ''
-url:              'http://josefdlange.com'
+url:              'https://josefdlange.com'
 baseurl:          ''
 
 exclude: ["README.md", "Gemfile", "Gemfile.lock", ".gitignore", "LICENSE.md"]
