@@ -1,0 +1,113 @@
+@import url('https://fonts.cdnfonts.com/css/national-park'); 
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+	background-color: #26302d;
+	color: #e3fff4;
+	font-family: 'Arvo', serif;
+	padding: 20vh 0;
+}
+
+a {
+	color: #f5fffb;
+}
+
+a:visited {
+	color: #f5fffb;
+}
+
+a:hover {
+	color: #3f8a6c;
+}
+
+strong {
+	color: #6ab094;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+.names {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.names > h1, .names > h2 {
+	margin: 0;
+}
+
+.names > h1 {
+	color: #eeffd4;
+	font-family: 'National Park', sans-serif;
+	font-size: 6rem;
+	font-weight: 250;
+	margin: 0 0 1rem;
+	text-transform: uppercase;
+}
+
+.names > h2 {
+	color: #889e95;
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin: 0 0 0.5rem;
+	font-style: oblique;
+}
+
+
+.serif {
+	font-family: serif;
+}
+
+.mono {
+	font-family: monospace;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Arvo', serif;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.links {
+	align-items: flex-end;
+	display: flex;
+	font-family: 'National Park', sans-serif;
+	font-weight: 900;
+	gap: 2rem;
+	justify-content: center;
+	letter-spacing: 0.05rem;
+	margin-bottom: 3rem;
+}
+
+.links a {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-decoration: none;
+}
+
+.links a i {
+	font-size: 3rem;
+}
+
+.squeeze {
+	padding: 0 20vw;
+
+}
+
+@media (max-width: 700px) {
+	body {
+		padding: 10vh 0;
+	}
+
+	.squeeze {
+		padding: 0 5vw;
+	}
+}
