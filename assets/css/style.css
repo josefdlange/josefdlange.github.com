@@ -102,6 +102,24 @@ strong {
 
 }
 
+.badge {
+	bottom: 50px;
+	left: 50%;
+	background-color: #eeffd4;
+	border-radius: 1rem;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	color: #26302d;
+	margin-left: -20vw;
+	width: 40vw;
+	opacity: 95%;
+	padding: 20px;
+	position: fixed;
+}
+
+.badge a {
+	color: #26302d;
+}
+
 @media (max-width: 700px) {
 	body {
 		padding: 10vh 0;
@@ -109,5 +127,9 @@ strong {
 
 	.squeeze {
 		padding: 0 5vw;
+	}
+
+	.badge {
+		display: none;
 	}
 }
